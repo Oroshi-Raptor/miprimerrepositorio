@@ -1,0 +1,182 @@
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    background-color: #f44336; /* Rojo */
+    color: white; /* Texto blanco */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centrar contenido */
+    align-items: flex-start; /* Alinear arriba */
+    width: 500px; /* Ancho total */
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+    width: calc(50% - 20px); /* 50% del ancho menos el padding */
+    background-color: #add8e6; /* Celeste claro */
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.search-container {
+    width: 450px;
+    background-color: #f0f8ff; /* Celeste clarito */
+    padding: 20px;
+    margin: 20px auto; /* Centrado horizontal */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centrado del contenido */
+}
+
+
+.search-container input[type="text"],
+.search-container input[type="date"] {
+    padding: 10px;
+    margin: 5px;
+    width: calc(100% - 22px);
+    box-sizing: border-box;
+    background-color: #f8f9fa; /* Gris claro */
+    border: 1px solid #000; /* Contorno negro */
+    border-radius: 4px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: #ff00ff; /* Fucsia */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.search-container button:hover {
+    background-color: #ff0099; /* Cambio de color al pasar el cursor */
+}
+
+
+#notifications-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.notification {
+    padding: 10px;
+    text-align: center;
+    margin: 20px auto; /* Centrado horizontal y margen superior e inferior */
+    color: #6a0dad; /* Color morado */
+    font-weight: bold; /* Texto en negrita */
+    background-color: #add8e6; /* Celeste clarito */
+    width: 550px; /* Ancho de 550px */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+
+
+.alert {
+    background-color: #f44336; /* Rojo */
+}
+
+.success {
+    background-color: #4CAF50; /* Verde */
+}
+
+.right-section {
+    width: calc(50% - 20px); /* 50% del ancho menos el padding */
+    background-color: #f44336; /* Rojo */
+    padding: 10px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+#package-list {
+    margin-top: 20px;
+    background: #add8e6; /* Celeste clarito */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px; /* Ancho del fondo celeste */
+    margin: 0 auto; /* Centrado horizontal */
+    text-align: center; /* Centrar texto */
+}
+
+#package-list h2 {
+    color: #333; /* Color de texto */
+}
+
+#package-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#package-list li {
+    background: #fff; /* Fondo blanco */
+    color: #333;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    width: 450px; /* Ancho de las cajas */
+    transition: transform 0.3s ease; /* Transición para agrandar al pasar el cursor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#package-list li:hover {
+    transform: scale(1.1); /* Agrandar al pasar el cursor */
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
